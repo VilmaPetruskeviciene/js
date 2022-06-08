@@ -123,3 +123,103 @@ if (n <= m) {
 } else {
     console.log('Bandykite kitą kartą.');
 }
+
+/* 2. Išvesti teksto tipo kintamųjų ilgius */
+
+const ilgis = 'katinelis';
+console.log(ilgis.length);
+
+/* 3.Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+a-kuris didesnis
+b-kuris mažesnis
+c-ar jie lygūs
+d-ar jie nelygūs
+e-kuris didesnis arba lygus
+f-kuris mažesnis arba lygus */
+
+const vs = 'obuolys';
+const md = 'pusis';
+
+if (vs.length > md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+if (vs.length < md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+if (vs.length === md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+if (vs.length !== md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+if (vs.length >= md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+if (vs.length <= md.length) {
+    console.log('Ilgesnis');
+} else {
+    console.log('Neatspejai');
+}
+
+/* 4. Išvesti sąrašo tipo kintamųjų ilgius */
+
+const sv = ['obuolys', 'slyva', 'ananasas'];
+console.log(sv[0].length, sv[1].length, sv[2].length);
+
+/* 5. Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
+a-kuris didesnis
+b-kuris mažesnis
+c-ar jie lygūs
+d-ar jie nelygūs
+e-kuris didesnis arba lygus
+f-kuris mažesnis arba lygus */
+
+
+/* Funkcijos */
+
+/* Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiamus testus */
+
+/* 1. Funkcija pavadinimu “tusciaFunkcija”:
+a-nepriima jokių kintamųjų
+b-neatlieka jokios vidinės logikos
+c-gražina boolean tipo reikšmę “false”
+d-TESTAS:
+     console.log( tusciaFunkcija() );
+      rezultatas: false  */
+
+const k = 5;
+const l = 3;
+
+function tusciaFunkcija() {
+    
+}
+
+function tusciaFunkcija(k, l) {
+    
+}
+
+function tusciaFunkcija(k, l) {
+    if (k < l) {
+        return (true);
+} else {
+    return (false);
+
+    }
+}
+console.log( tusciaFunkcija() );
+
