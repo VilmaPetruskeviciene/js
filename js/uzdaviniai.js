@@ -223,3 +223,24 @@ function tusciaFunkcija(k, l) {
 }
 console.log( tusciaFunkcija() );
 
+/* 2. Funkcija pavadinimu “daugyba”:
+a-priima du skaičiaus tipo kintamuosius
+b-atskirame kintamajame įsimena sandaugos reikšmę
+c-gražina saudaugos rezultatą
+d-TESTAI:
+    console.log( daugyba( skaicius1, skaicius2 ) );
+    console.log( daugyba( skaicius3, skaicius2 ) );
+    console.log( daugyba( skaicius1, skaicius3 ) );
+    rezultatas: teisingos reikšmės; */
+
+    function daugyba(q, w) {
+        const dg = q * w;
+        return dg;
+    };
+    const q = 11;
+    const w = 8;  
+
+    /*console.log( daugyba( skaicius1, skaicius2 ) );
+    console.log( daugyba( skaicius3, skaicius2 ) );
+    console.log( daugyba( skaicius1, skaicius3 ) );*/
+
