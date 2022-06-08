@@ -6,6 +6,9 @@
     "dev": "nodemon",
     "number": "nodemon ./js/number.js",
     "string": "nodemon ./js/string.js",
+    "function": "nodemon ./js/function.js",
+    "if": "nodemon ./js/if.js",
+    "uzdaviniai": "nodemon ./js/uzdaviniai.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
