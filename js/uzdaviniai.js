@@ -75,6 +75,7 @@ const sar3 = `${vaisius[4]}, ${vaisius[3]}, ${vaisius[2]}, ${vaisius[1]}, ${vais
 console.log(sar3);
 
 /* Kintamųjų palyginimas */
+
 /* Lyginant, jei rezultatas tenkina palyginimo sąlygą, tai į console išvesti žodį “Pomidoras”, o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”. */
 
 /* 1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:
@@ -189,6 +190,87 @@ d-ar jie nelygūs
 e-kuris didesnis arba lygus
 f-kuris mažesnis arba lygus */
 
+const vais = ['ananasas', 'mandarinas', 'obuolys'];
+
+if (vais[0].length > vais[1].length && vais[0].length > vais[2].length) {
+    console.log( `${vais[0]} didesnis` );
+} else {
+    if (vais[1].length > vais[2].length) {
+        console.log( `${vais[1]} didesnis` );
+    } else {
+        console.log( `${vais[2]} didesnis` );
+    }
+};
+
+if (vais[0].length < vais[1].length && vais[0].length < vais[2].length) {
+    console.log( `${vais[0]} mazesnis` );
+} else {
+    if (vais[1].length < vais[2].length) {
+        console.log( `${vais[1]} mazesnis` );
+    } else {
+        console.log( `${vais[2]} mazesnis` );
+    }
+};
+
+if (vais[0].length === vais[1].length && vais[0].length === vais[2].length) {
+    console.log( `Visi vaisiai lygus.` );
+} else {
+    if (vais[0].length === vais[1].length || vais[0].length === vais[2].length) {
+        console.log( `${vais[0]} lygus kitam vaisiui` );
+    }  else {
+        if (vais[1].length === vais[2].length) {
+            console.log( `${vais[1]} lygus ${vais[2]}` );
+        } else {
+            console.log( `Vaisiai nelygus.` );
+        }
+    }
+};
+
+if (vais[0].length !== vais[1].length && vais[0].length !== vais[2].length) {
+    console.log( `Visi vaisiai nelygus.` );
+} else {
+    if (vais[0].length !== vais[1].length || vais[0].length !== vais[2].length) {
+        console.log( `${vais[0]} nelygus kitam vaisiui` );
+    }  else {
+        if (vais[1].length !== vais[2].length) {
+            console.log( `${vais[1]} nelygus ${vais[2]}` );
+        } else {
+            console.log( `Vaisiai lygus.` );
+        }
+    }
+};
+
+if (vais[0].length >= vais[1].length && vais[0].length >= vais[2].length) {
+    console.log( `${vais[0]} didesnis arba lygus` );
+} else {
+    if (vais[1].length >= vais[2].length) {
+        console.log( `${vais[1]} didesnis arba lygus ${vais[2]} ir ${vais[0]}` );
+    } else {
+        console.log( `${vais[2]} didesnis` );
+    }
+};
+
+if (vais[0].length <= vais[1].length && vais[0].length <= vais[2].length) {
+    console.log( `${vais[0]} mazesnis arba lygus` );
+} else {
+    if (vais[1].length <= vais[2].length) {
+        console.log( `${vais[1]} mazesnis arba lygus ${vais[2]}` );
+    } else {
+        console.log( `${vais[2]} mazesnis` );
+    }
+};
+
+/* Ciklo for panaudojimas */
+
+/*1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+a- 0 … 0
+b- 0 … 4
+c- 0 … 100
+d- 574 … 815
+e- -50 … 50
+f- -70 … 30 */
+
+
 
 /* Funkcijos */
 
@@ -284,4 +366,27 @@ console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
 console.log( skaitmenuKiekisSkaiciuje( true ) );
 console.log( skaitmenuKiekisSkaiciuje( "asd" ) );
 console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+
+/* 4. Funkcija pavadinimu “didziausiasSkaiciusSarase”:
+a-priima vieną kintamąjį
+b-jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+c-jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
+d-priešingu atveju, funkcija tęsia darbą
+e-pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
+f-gražina didžiausią surastą skaičių
+g-TESTAI:
+console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+rezultatas: 1
+console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+rezultatas: 3
+console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+rezultatas: 78
+console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
+rezultatas: 69
+console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+rezultatas: -1
+console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
+rezultatas: “Pateikta netinkamo tipo reikšmė.”
+console.log( didziausiasSkaiciusSarase( [] ) );
+rezultatas: “Pateiktas sąrašas negali būti tuščias.” */
 

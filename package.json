@@ -8,6 +8,9 @@
     "string": "nodemon ./js/string.js",
     "function": "nodemon ./js/function.js",
     "if": "nodemon ./js/if.js",
+    "ternary": "nodemon ./js/ternary.js",
+    "array": "nodemon ./js/array.js",
+    "for": "nodemon ./js/for.js",
     "uzdaviniai": "nodemon ./js/uzdaviniai.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
