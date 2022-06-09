@@ -260,6 +260,8 @@ if (vais[0].length <= vais[1].length && vais[0].length <= vais[2].length) {
     }
 };
 
+console.log('---------------------');
+
 /* Ciklo for panaudojimas */
 
 /*1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
@@ -270,7 +272,58 @@ d- 574 … 815
 e- -50 … 50
 f- -70 … 30 */
 
+let cikl1 = null;
+for (let i = 0; i <= 0; i++) {
+    cikl1 += i;
+}
+console.log(cikl1);
 
+let cikl2 = null;
+for (let i = 0; i <= 4; i++) {
+    cikl2 += i;
+}
+console.log(cikl2);
+
+let cikl3 = null;
+for (let i = 0; i <= 100; i++) {
+    cikl3 += i;
+}
+console.log(cikl3);
+
+let cikl4 = null;
+for (let i = 574; i <= 815; i++) {
+    cikl4 += i;
+}
+console.log(cikl4);
+
+let cikl5 = null;
+for (let i = -50; i <= 50; i++) {
+    cikl5 += i;
+}
+console.log(cikl5);
+
+let cikl6 = null;
+for (let i = -70; i <= 30; i++) {
+    cikl6 += i;
+}
+console.log(cikl6);
+
+/* 2. panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+pvz.: “abcdef” -> “fedcba” */
+
+/*const tekst = 'pavasaris';
+for (let i = 0; i < tekst.length; i++) {
+    const letter = tekst[i];
+    console.log(letter); 
+} */
+
+const tekst = 'pavasaris';
+for (let i = tekst.length - 1; i <= 0; i++) {
+    const letter = tekst[i];
+    console.log(letter);
+}
+
+console.log('----------------------------');
 
 /* Funkcijos */
 
