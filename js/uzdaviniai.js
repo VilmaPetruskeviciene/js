@@ -233,14 +233,16 @@ d-TESTAI:
     console.log( daugyba( skaicius1, skaicius3 ) );
     rezultatas: teisingos reikšmės; */
 
-    function daugyba(q, w) {
-        const dg = q * w;
+    function daugyba(skaicius1, skaicius2) {
+        const dg = skaicius1 * skaicius2;
         return dg;
     };
-    const q = 11;
-    const w = 8;  
 
-    /*console.log( daugyba( skaicius1, skaicius2 ) );
+    const skaicius1 = 11;
+    const skaicius2 = 8;  
+    const skaicius3 = 4;
+
+    console.log( daugyba( skaicius1, skaicius2 ) );
     console.log( daugyba( skaicius3, skaicius2 ) );
-    console.log( daugyba( skaicius1, skaicius3 ) );*/
+    console.log( daugyba( skaicius1, skaicius3 ) );
 
