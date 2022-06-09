@@ -246,3 +246,42 @@ d-TESTAI:
     console.log( daugyba( skaicius3, skaicius2 ) );
     console.log( daugyba( skaicius1, skaicius3 ) );
 
+/* 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
+a-priima vieną kintamąjį
+b-jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+c-priešingu atveju, funkcija tęsia darbą
+d-į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį
+e-gražina skaitmenų kiekį
+f-TESTAI:
+    console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+        rezultatas: 1
+    console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+        rezultatas: 3
+    console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+        rezultatas: 11
+    console.log( skaitmenuKiekisSkaiciuje( true ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( skaitmenuKiekisSkaiciuje( “asd” ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.”
+    console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+        rezultatas: “Pateikta netinkamo tipo reikšmė.” */
+
+
+function skaitmenuKiekisSkaiciuje(g) {
+        if (typeof g !== 'number') {
+            return ('Pateikta netinkamo tipo reikšmė.');
+        } else {
+            const sk = Math.ceil(Math.log10(g + 1));
+            return sk;
+        }
+};
+
+const g = 545;
+
+console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+console.log( skaitmenuKiekisSkaiciuje( true ) );
+console.log( skaitmenuKiekisSkaiciuje( "asd" ) );
+console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+
