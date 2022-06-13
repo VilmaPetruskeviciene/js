@@ -311,17 +311,43 @@ console.log(cikl6);
 /* 2. panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 pvz.: “abcdef” -> “fedcba” */
 
-/*const tekst = 'pavasaris';
-for (let i = 0; i < tekst.length; i++) {
-    const letter = tekst[i];
-    console.log(letter); 
-} */
-
 const tekst = 'pavasaris';
-for (let i = tekst.length - 1; i <= 0; i++) {
-    const letter = tekst[i];
-    console.log(letter);
+let cv = '';
+let word = '';
+
+for (let i = tekst.length - 1; i >= 0; i--) {
+    cv = tekst[i];
+    word += cv;
+};
+console.log(word);
+
+/* 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+a- 0 - 11
+b- 8 - 31
+c- -18 - 18
+d- rezultatą pateikti tokiu formatu:
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai. */
+
+let cikl11 = '';
+let sk11 = '';
+let sum11 = '';
+for (let i = 0; i <= 11; i++) {
+    if (i % 3 === 0) {
+        sk11 += [i];
+        sum11 = sk11.toString();
+        console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ' + sum11.length + ' vienetai.');
+    } /*else if (i % 5 === 0) {
+        console.log(i + 'dalijasi is 5');
+    } else if (i % 7 === 0) {
+        console.log(i + 'dalijasi is 7');
+    } */
 }
+
+
+/* const sk = Math.ceil(Math.log10(g + 1));
+            return sk; */
 
 console.log('----------------------------');
 
