@@ -11,6 +11,8 @@
     "ternary": "nodemon ./js/ternary.js",
     "array": "nodemon ./js/array.js",
     "for": "nodemon ./js/for.js",
+    "arrow": "nodemon ./js/arrow.js",
+    "spread": "nodemon ./js/spread.js",
     "uzdaviniai": "nodemon ./js/uzdaviniai.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
