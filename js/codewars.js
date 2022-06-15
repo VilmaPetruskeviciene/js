@@ -35,3 +35,28 @@ console.log(arrayMadness(a1, b1));
 
 console.log('--------------------');
 
+const string = 'Jędrzej Błądziński';
+
+function correctPolishLetters (string) {
+    const str = string.split('');
+    const letters = {
+    'ą':'a', 'ć':'c', 'ę': 'e', 'ł':'l', 'ń':'n', 'ó':'o', 'ś':'s', 'ź':'z', 'ż':'z'
+  }
+  
+  return str.map((i) => letters[i] ? letters[i] : i).join('');
+}
+
+console.log(correctPolishLetters (string));
+
+console.log('--------------------');
+
+const str1 = 'Hello';
+const letter = 'o';
+function strCount(str1, letter){  
+    const sp = str1.split('');
+    return sp.filter((i) => letter === i).length;
+  }
+console.log(strCount(str1, letter));
+
+console.log('--------------------');
+

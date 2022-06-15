@@ -49,7 +49,7 @@ console.log(marks);
 console.log(rezMap);
 console.log(rezMap2);
 
-// map - kaip modifikuoti kiekviena nari
+// filter - kaip modifikuoti kiekviena nari
 console.log('----- filter');
 const filterMarks = marks
     .filter(mark => mark > 2)

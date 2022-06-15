@@ -337,22 +337,27 @@ let sk13 = '';
 let sum11 = '';
 let sum12 = '';
 let sum13 = '';
+let total11 = '';
+let total12 = '';
+let total13 = '';
 for (let i = 0; i <= 11; i++) {
     if (i % 3 === 0) {
-        sk11 += [i];
+        sk11 += [i] + ' ';
         sum11 = sk11.toString();
-    } else if (i % 5 === 0) {
-        sk12 += [i];
+        total11 = sum11.split(' ').length - 1;
+    } if (i % 5 === 0) {
+        sk12 += [i] + ' ';
         sum12 = sk12.toString();
-    } else if (i % 7 === 0) {
-        sk13 += [i];
+        total12 = sum12.split(' ').length - 1;
+    } if (i % 7 === 0) {
+        sk13 += [i] + ' ';
         sum13 = sk13.toString();
-    }
-        
+        total13 = sum13.split(' ').length - 1;
+    }   
 }
-console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ' + sum11.length + ' vienetai.');
-console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra ' + sum12.length + ' vienetai.');
-console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra ' + sum13.length + ' vienetai.');
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ' + total11 + ' vienetai.');
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra ' + total12 + ' vienetai.');
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra ' + total13 + ' vienetai.');
 
 console.log('----------------------------');
 
@@ -362,22 +367,29 @@ let sk23 = '';
 let sum21 = '';
 let sum22 = '';
 let sum23 = '';
+let total21 = '';
+let total22 = '';
+let total23 = '';
 for (let i = 8; i <= 31; i++) {
     if (i % 3 === 0) {
-        sk21 += [i];
+        sk21 += [i] + ' ';
         sum21 = sk21.toString();
-    } else if (i % 5 === 0) {
-        sk22 += [i];
+        total21 = sum21.split(' ').length - 1;
+    } if (i % 5 === 0) {
+        sk22 += [i] + ' ';
         sum22 = sk22.toString();
-    } else if (i % 7 === 0) {
-        sk23 += [i];
+        total22 = sum22.split(' ').length - 1;
+    } if (i % 7 === 0) {
+        sk23 += [i] + ' ';
         sum23 = sk23.toString();
+        //console.log(sum23);
+        total23 = sum23.split(' ').length - 1;
     }
         
 }
-console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 3 yra ' + sum21.length + ' vienetai.');
-console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 5 yra ' + sum22.length + ' vienetai.');
-console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ' + sum23.length + ' vienetai.');
+console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 3 yra ' + total21 + ' vienetai.');
+console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 5 yra ' + total22 + ' vienetai.');
+console.log('Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ' + total23 + ' vienetai.');
 
 console.log('----------------------------');
 
@@ -387,22 +399,28 @@ let sk33 = '';
 let sum31 = '';
 let sum32 = '';
 let sum33 = '';
+let total31 = '';
+let total32 = '';
+let total33 = '';
 for (let i = -18; i <= 18; i++) {
     if (i % 3 === 0) {
-        sk31 += [i];
+        sk31 += [i] + ' ';
         sum31 = sk31.toString();
-    } else if (i % 5 === 0) {
-        sk32 += [i];
+        total31 = sum31.split(' ').length - 1;
+    } if (i % 5 === 0) {
+        sk32 += [i] + ' ';
         sum32 = sk32.toString();
-    } else if (i % 7 === 0) {
-        sk33 += [i];
+        total32 = sum32.split(' ').length - 1;
+    } if (i % 7 === 0) {
+        sk33 += [i] + ' ';
         sum33 = sk33.toString();
+        total33 = sum33.split(' ').length - 1;
     }
         
 }
-console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 3 yra ' + sum31.length + ' vienetai.');
-console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 5 yra ' + sum32.length + ' vienetai.');
-console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 7 yra ' + sum33.length + ' vienetai.');
+console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 3 yra ' + total31 + ' vienetai.');
+console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 5 yra ' + total32 + ' vienetai.');
+console.log('Skaičių intervale tarp -18 ir 18, besidalijančių be liekanos iš 7 yra ' + total33 + ' vienetai.');
 
 console.log('----------------------------');
 
@@ -439,6 +457,8 @@ function tusciaFunkcija(k, l) {
 }
 console.log( tusciaFunkcija() );
 
+console.log('----------------------------');
+
 /* 2. Funkcija pavadinimu “daugyba”:
 a-priima du skaičiaus tipo kintamuosius
 b-atskirame kintamajame įsimena sandaugos reikšmę
@@ -461,6 +481,8 @@ d-TESTAI:
     console.log( daugyba( skaicius1, skaicius2 ) );
     console.log( daugyba( skaicius3, skaicius2 ) );
     console.log( daugyba( skaicius1, skaicius3 ) );
+
+    console.log('----------------------------');
 
 /* 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
 a-priima vieną kintamąjį
@@ -500,6 +522,8 @@ console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
 console.log( skaitmenuKiekisSkaiciuje( true ) );
 console.log( skaitmenuKiekisSkaiciuje( "asd" ) );
 console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+
+console.log('----------------------------');
 
 /* 4. Funkcija pavadinimu “didziausiasSkaiciusSarase”:
 a-priima vieną kintamąjį
