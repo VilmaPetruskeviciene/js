@@ -1,3 +1,5 @@
+const ms = require("ms");
+
 const arr = [5, 2, 's', -3, 2, 1];
 function positiveSum(arr) {
     let sum2 = 0;
@@ -57,6 +59,65 @@ function strCount(str1, letter){
     return sp.filter((i) => letter === i).length;
   }
 console.log(strCount(str1, letter));
+
+console.log('--------------------');
+
+const n = 4;
+function testEven(n) {
+    if (n % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(testEven(n));
+
+console.log('--------------------');
+
+const bullets = 11;
+const dragons = 5;
+function hero(bullets, dragons){
+    if (bullets / 2 >= dragons) {
+        return true;
+    } else {
+        return false;
+    }
+    }
+console.log(hero(bullets, dragons));
+
+console.log('--------------------');
+
+const i = 2;
+function doubleInteger(i) {
+  return i * 2;
+}
+console.log(doubleInteger(i));
+
+console.log('--------------------');
+
+const h = 0;
+const m = 1;
+const s = 1;
+
+function past(h, m, s){
+    const hours = h * 60 * 60 * 1000;
+    const minutes = m * 60 * 1000;
+    const seconds = s * 1000;
+    return hours + minutes + seconds;
+  }
+console.log(past(h, m, s));
+
+console.log('--------------------');
+
+const num = 3;
+const summation = function (num) {
+    let suma = 0;
+    for (let i = 0; i <= num; i++) {
+        suma += i;
+    }
+    return suma;
+  }
+console.log(summation(num));
 
 console.log('--------------------');
 
