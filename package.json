@@ -17,6 +17,7 @@
     "arrow": "nodemon ./js/arrow.js",
     "spread": "nodemon ./js/spread.js",
     "uzdaviniai": "nodemon ./js/uzdaviniai.js",
+    "codewars": "nodemon ./js/codewars.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
