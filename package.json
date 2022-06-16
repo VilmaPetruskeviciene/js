@@ -4,6 +4,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
+    "numberImport": "nodemon ./numberImport.js",
+    "if-values": "nodemon ./js/if-values.js",
+    "textCount": "nodemon ./js/textCount.js",
+    "parsing": "nodemon ./js/parsing.js",
+    "number-parsing": "nodemon ./js/number-parsing.js",
     "letterCount": "nodemon ./js/letterCount.js",
     "math-as-object": "nodemon ./js/math-as-object.js",
     "math-as-array": "nodemon ./js/math-as-array.js",

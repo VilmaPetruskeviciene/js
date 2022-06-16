@@ -280,13 +280,10 @@ const arrayOfSheep = [true,  true,  true,  false,
                       false, false, true,  true];
 
 function countSheeps(arrayOfSheep) {
-    let sheep = 0;
-    for (let i = 0; i <= arrayOfSheep.length; i++) {
-      if (i === true) {
-        sheep += arrayOfSheep[i];
-        
-      }   
-    } 
-    return sheep;
+  const sheep = arrayOfSheep.filter(value => value === true).length; 
+  return sheep;  
 }
 console.log(countSheeps(arrayOfSheep));
+
+console.log('--------------------');
+

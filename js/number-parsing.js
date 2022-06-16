@@ -1,4 +1,4 @@
-function suma(a, b) {
+/*function suma(a, b) {
     const initialAsize = ('' + a).length;
     const initialBsize = ('' + b).length;
 
@@ -16,6 +16,21 @@ function suma(a, b) {
     }
 
     return a + b;
+}*/
+
+function suma(a, b) {
+    a = +a;
+    b = +b;
+
+    if (isNaN(a)) {
+        return 'ERROR: Pirmas parametras yra ne tikras skaicius';
+    }
+    if (isNaN(b)) {
+        return 'ERROR: Antras parametras yra ne tikras skaicius';
+    }
+
+    return a + b;
 }
+
 
 module.exports = suma;
