@@ -345,3 +345,155 @@ console.log(sameCase(a, b));
 
 console.log('--------------------');
 
+const number1 = 5;
+function even_or_odd(number1) {
+  if (number1 % 2 === 0) {
+    return 'Even';
+  } else {
+    return 'Odd';
+  }
+}
+console.log(even_or_odd(number1));
+
+console.log('--------------------');
+
+const num1 = 2.2;
+function makeNegative(num1) {
+  return (-Math.abs(num1))
+}
+console.log(makeNegative(num1));
+
+console.log('--------------------');
+
+const str = 'world';
+function solution(str){
+  let cv = '';
+  let word = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    cv = str[i];
+    word += cv;
+  }
+  return word;
+}
+console.log(solution(str));
+
+console.log('--------------------');
+
+const str2 = 'obuolys';
+function removeChar(str2){
+  let word1 = str2.substring(1);
+  let word2 = word1.substring(0, word1.length - 1);
+  return word2;
+ }
+console.log(removeChar(str2));
+
+console.log('--------------------');
+
+const bool = false;
+function boolToWord( bool ){
+  if (bool === true) {
+    return 'Yes';
+  } else {
+    return 'No';
+  }
+}
+console.log(boolToWord( bool ));
+
+console.log('--------------------');
+
+const num3 = 554;
+function numberToString(num3) {
+  let wr = num3.toString();
+  return wr;
+}
+console.log(numberToString(num3));
+
+console.log('--------------------');
+
+const n1 = 3;
+const s1 = 'Hello';
+function repeatStr (n1, s1) {
+  return s1.repeat(n1);
+}
+console.log(repeatStr (n1, s1));
+
+console.log('--------------------');
+
+const x = 'sfdg fgfh   dggh      fggj246 6768';
+function noSpace(x){
+  const words = x.split('').filter(e => e.trim().length).join('');
+  return words;
+}
+console.log(noSpace(x));
+
+console.log('--------------------');
+
+const numbers = [1, 2, 2];
+function squareSum(numbers){
+  let el = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    el += numbers[i] ** 2; 
+  } 
+  return el;
+}
+console.log(squareSum(numbers));
+
+console.log('--------------------');
+
+const args = [34, -15, 88, 2];
+function findSmallestInt(args) {
+  let min = Math.min(...args);
+  return min; 
+}
+console.log(findSmallestInt(args));
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = Math.min(...args);
+    return min; 
+  }
+}
+console.log(findSmallestInt(args));
+
+console.log('--------------------');
+
+const n3 = 14;
+const x3 = 2;
+const y3 = 6;
+function isDivisible(n3, x3, y3) {
+  if (n3 % x3 === 0 && n3 % y3 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isDivisible(n3, x3, y3));
+
+console.log('--------------------');
+
+const value1 = 6;
+const value2 = 2;
+const operation = '+';
+function basicOp(operation, value1, value2) {
+  if (operation === '+') {
+    return value1 + value2;
+  } else if (operation === '-') {
+    return value1 - value2;
+  } else if (operation === '*') {
+    return value1 * value2;
+  } else if (operation === '/') {
+    return value1 / value2;
+  }
+}
+console.log(basicOp(operation, value1, value2));
+
+console.log('--------------------');
+
+const name = 'Sam Harris';
+function abbrevName(name){
+  const name1 = name.split(' ').map(w => w[0]).join('.').toUpperCase();
+  return name1;
+}
+console.log(abbrevName(name));
+
+console.log('--------------------');
