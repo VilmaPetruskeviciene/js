@@ -287,3 +287,61 @@ console.log(countSheeps(arrayOfSheep));
 
 console.log('--------------------');
 
+const blueStart = 5;
+const redStart = 5;
+const bluePulled = 2;
+const redPulled = 3;
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  return (blueStart - bluePulled) / (redStart - redPulled + blueStart - bluePulled);
+}
+console.log(guessBlue(blueStart, redStart, bluePulled, redPulled));
+
+/*function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  var blueLeft = blueStart - bluePulled;
+  var redLeft = redStart - redPulled;
+  var allLeft = blueLeft + redLeft;
+  
+  return blueLeft/allLeft;
+}*/
+
+console.log('--------------------');
+
+const time = 2.4;
+function litres(time) {
+  let drink1 = time / 2;
+  let drink2 = Math.trunc(drink1);
+  return drink2;
+}
+console.log(litres(time));
+
+console.log('--------------------');
+
+const year = 1756;
+function century(year) {
+  let cent = Math.floor(year / 100);
+  if (year % 100 === 0) {
+    return cent;
+  } else {
+    return cent + 1;
+  }
+}
+console.log(century(year));
+
+// const century = year => Math.ceil(year/100)
+
+console.log('--------------------');
+
+const a = 'f';
+const b = 3;
+sameCase = (a, b) => /[a-z]/i.test(a) && /[a-z]/i.test(b) ? Number(/[a-z]/.test(a) == /[a-z]/.test(b)) : -1; 
+console.log(sameCase(a, b));
+
+/* function sameCase(a, b){
+  if (/[a-zA-Z]/.test(a) === false || /[a-zA-Z]/.test(b) === false) return -1;
+  if (a === a.toUpperCase() && b !== b.toUpperCase()) return 0;
+  if (a !== a.toUpperCase() && b === b.toUpperCase()) return 0;
+  return 1;
+} */
+
+console.log('--------------------');
+
