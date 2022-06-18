@@ -497,3 +497,41 @@ function abbrevName(name){
 console.log(abbrevName(name));
 
 console.log('--------------------');
+
+const n4 = 348597;
+function digitize(n4) {
+  return [...String(n4)].map(Number).reverse()
+}
+console.log(digitize(n4));
+/* .match(/\d+/g)  // give an array of all continuos strings of digits. ['1','2','3','4']
+
+.map(Number)  // Calls Number on each value in the array (casting it to a number)
+              // and returns the array of results. [1,2,3,4]
+              //
+              // Keep in mind Number(val) attempts to create a Number from 
+              // what ever is passed to it. If it is a string itll
+              // try to convert the string to a numerical value. */
+
+console.log('--------------------');
+
+const str3 = '1234';
+const stringToNumber = function(str3){ 
+  return Number(str3);
+}
+console.log(stringToNumber(str3));
+
+console.log('--------------------');
+
+const haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"];
+function findNeedle(haystack) {
+  for (let i = 0; i < haystack.length; i++) {
+    const element = haystack[i];
+    if (element === 'needle') {
+      return `found the needle at position ${i}`;
+    }
+    
+  }
+}
+console.log(findNeedle(haystack));
+
+console.log('--------------------');
