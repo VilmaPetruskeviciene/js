@@ -4,6 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
+    "set": "nodemon ./js/set.js",
+    "random": "nodemon ./js/random.js",
+    "cw-stats": "nodemon ./js/cw-stats.js",
+    "concat": "nodemon ./js/concat.js",
     "numberImport": "nodemon ./numberImport.js",
     "if-values": "nodemon ./js/if-values.js",
     "textCount": "nodemon ./js/textCount.js",

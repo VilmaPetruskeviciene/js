@@ -535,3 +535,20 @@ function findNeedle(haystack) {
 console.log(findNeedle(haystack));
 
 console.log('--------------------');
+
+const x1 = [1, 2, 9];
+function maps(x1){
+  return x1.map(i => i*2);
+}
+console.log(maps(x1));
+/*function maps(x){
+  //return x.map(el => el * 2);
+  let arr = [];
+  for(let i = 0; i < x.length; i++){
+  arr.push(x[i] * 2);
+  }
+  return arr;
+  }*/
+
+  console.log('--------------------');
+  
