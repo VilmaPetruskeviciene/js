@@ -551,4 +551,71 @@ console.log(maps(x1));
   }*/
 
   console.log('--------------------');
-  
+
+const str4 = '1a2b3c4d5eHELLOworld';
+String.prototype.toAlternatingCase = function () {
+  let str = '';
+    for(let i = 0; i< this.length; i++){
+      if (this[i] == this[i].toLowerCase()){ 
+        str += this[i].toUpperCase();
+      } else {
+        str += this[i].toLowerCase();
+      }
+    }
+    return str;
+  }
+
+  console.log('--------------------');
+
+const name3 = 'Peter';
+function greet(name3){
+    return 'Hello, ' + name3 + ' how are you doing today?';
+}
+console.log(greet(name3));
+
+console.log('--------------------');
+
+const greet1 = () => 'hello world!';
+console.log(greet1());
+
+console.log('--------------------');
+const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+function countPositivesSumNegatives(input) {
+  if (input === null || input.length < 1) {
+      return [];
+  }
+  let array = [0, 0];
+
+  for(var i = 0; i < input.length; i++) {
+      if(input[i] <= 0) {
+          array[1] += input[i];
+    } else {
+          array[0] += 1;
+    }
+  }
+  return array;
+}
+console.log(countPositivesSumNegatives(input));
+
+console.log('--------------------');
+
+const array = [1, -2, 3, -4, 0];
+function invert(array) {
+  el1 = array.map(i => i * -1);
+  return el1;
+}
+console.log(invert(array));
+
+console.log('--------------------');
+
+const b2 = false;
+function booleanToString(b2){
+  if (b2 === true) {
+    return 'true';
+  } else {
+    return 'false';
+  }
+}
+console.log(booleanToString(b2));
+
+console.log('--------------------');
