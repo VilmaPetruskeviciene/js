@@ -47,7 +47,7 @@ for (let i = 0; i < word.length; i++) {
     console.log(i, ')', letter);
 }
 
-console.clear();
+
 
 for (let i = 10; i > 0; i--) {
     console.log(i);

@@ -698,6 +698,8 @@ String.prototype.isUpperCase = function() {
 }
 console.log(str6.isUpperCase());
 
+console.log('--------------------');
+
 const x5 = '45385593107843568';
 function fakeBin(x5){
 let x4 = '';
@@ -711,3 +713,5 @@ for (let i = 0; i < x5.length; i++) {
   return x4;
 }
 console.log(fakeBin(x5));
+
+console.log('--------------------');
