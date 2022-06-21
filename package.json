@@ -4,6 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
+    "numCount": "nodemon ./js/numCount.js",
+    "family": "nodemon ./js/family.js",
+    "maxInList": "nodemon ./js/maxInList.js",
     "set": "nodemon ./js/set.js",
     "random": "nodemon ./js/random.js",
     "cw-stats": "nodemon ./js/cw-stats.js",

@@ -619,3 +619,85 @@ function booleanToString(b2){
 console.log(booleanToString(b2));
 
 console.log('--------------------');
+
+const str5 = 'HELLO';
+String.prototype.isUpperCase = function(str5) {
+  let chr = this.charAt(str5);
+    return /[A-Z]|[\u0080-\u024F]/.test(chr) && chr === chr.toUpperCase();
+}
+console.log(String.prototype.isUpperCase(str5));
+
+console.log('--------------------');
+
+const array1 = [1, 2, 3, 4];
+function find_average(array1) {
+  let sum = 0;
+  for (const i of array1) {
+      sum += i;
+  }
+  if (sum == []) {
+    return 0;
+  } else {
+    return sum / array1.length;
+  }
+}
+console.log(find_average(array1));
+
+console.log('--------------------');
+
+const input3 = '3526094646346314522020049459831460229797719503514427021325895049023219811244751093901673163164276237398890044129912975171535073127347822122923162933564008998';
+
+function sp(input3) {
+  let mas = input3.split('');
+  let pairs = mas[1];
+  let masyvas = [];
+  for (let i = 0; i < mas.length; i++) {
+    pairs = mas[i] + mas[i+1];
+    masyvas.push(pairs);
+  }  
+  const big = masyvas.sort((a,b) => b - a);
+  let a = big[0];
+  let b = 0;
+  let a1 = big[1];
+  let b1 = 0;
+  for (let i = 0; i < big.length -1; i++) {
+    
+    if (a === big[i]) {
+      a = big[i];
+      b++;
+    } else {
+      a1 = big[i];
+      b1 = 1;
+    }
+    if (b < b1) {
+      
+    }
+    
+  }
+
+  return a;
+}
+console.log(sp(input3));
+
+console.log('--------------------');
+/*
+function oldest(list) {
+let age = -1;
+let name = ''
+for (const person of list) {
+if (person.age > age) {
+age = person.age;
+name= person.name;
+}
+if (person.children && person.children.length > 0) {
+const oldestChild = oldest(person.children);
+if (oldestChild > age) {
+age = oldestChild.age;
+name = oldestChild.name;
+}
+}
+}
+console.log(`${name} is ${age} years`)
+}
+//console.log(oldest(family)); // Styvas is 105 years old.
+*/
