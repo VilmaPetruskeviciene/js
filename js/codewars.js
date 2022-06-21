@@ -647,37 +647,25 @@ console.log('--------------------');
 
 const input3 = '3526094646346314522020049459831460229797719503514427021325895049023219811244751093901673163164276237398890044129912975171535073127347822122923162933564008998';
 
-function sp(input3) {
-  let mas = input3.split('');
-  let pairs = mas[1];
-  let masyvas = [];
-  for (let i = 0; i < mas.length; i++) {
-    pairs = mas[i] + mas[i+1];
-    masyvas.push(pairs);
-  }  
-  const big = masyvas.sort((a,b) => b - a);
-  let a = big[0];
-  let b = 0;
-  let a1 = big[1];
-  let b1 = 0;
-  for (let i = 0; i < big.length -1; i++) {
-    
-    if (a === big[i]) {
-      a = big[i];
-      b++;
-    } else {
-      a1 = big[i];
-      b1 = 1;
-    }
-    if (b < b1) {
-      
-    }
-    
-  }
+const splited = input3.match(/.{1,2}/g)
+//console.log(splited);
+function counter(bl) {
+  const skaiciai = {};
 
-  return a;
-}
-console.log(sp(input3));
+      for(const Symbol of bl) {
+          if(skaiciai[Symbol]) {
+              skaiciai[Symbol]++;
+          } else {
+         skaiciai[Symbol] = 1;
+          }
+      }
+      let arr = Object.values(skaiciai);
+      let max = Math.max(...arr);
+      let zaeb = Object.keys(skaiciai).find(key => skaiciai[key] === max)
+    //console.log(max);
+    return `Skaicius ${zaeb} pasikartoja ${max} kartus.`
+  }
+  console.log(counter(splited));
 
 console.log('--------------------');
 /*
@@ -701,3 +689,25 @@ console.log(`${name} is ${age} years`)
 }
 //console.log(oldest(family)); // Styvas is 105 years old.
 */
+
+console.log('--------------------');
+
+const str6 = "hello I AM DONALD";
+String.prototype.isUpperCase = function() {
+  return this == this.toUpperCase();
+}
+console.log(str6.isUpperCase());
+
+const x5 = '45385593107843568';
+function fakeBin(x5){
+let x4 = '';
+for (let i = 0; i < x5.length; i++) {
+  if (x5[i] < '5') {
+    x4 += '0';
+  } else if (x5[i] >= '5') {
+    x4 += '1';
+  }
+}
+  return x4;
+}
+console.log(fakeBin(x5));
