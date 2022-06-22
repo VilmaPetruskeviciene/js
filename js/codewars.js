@@ -715,3 +715,14 @@ for (let i = 0; i < x5.length; i++) {
 console.log(fakeBin(x5));
 
 console.log('--------------------');
+
+const n2 = 1050;
+function noBoringZeros(n2) {
+  let el = 0;
+  for (let i = 0; i < n2.length; i++) {
+    el += n2[i];
+    
+  } 
+  return el;
+}
+console.log(noBoringZeros(n2));
