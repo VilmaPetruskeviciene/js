@@ -718,11 +718,12 @@ console.log('--------------------');
 
 const n2 = 1050;
 function noBoringZeros(n2) {
-  let el = 0;
-  for (let i = 0; i < n2.length; i++) {
-    el += n2[i];
-    
-  } 
-  return el;
+  while (n2 % 10 === 0 && n2 !== 0) {
+    n2 = n2 / 10;
+  }
+  return n2;
 }
 console.log(noBoringZeros(n2));
+
+console.log('--------------------');
+
