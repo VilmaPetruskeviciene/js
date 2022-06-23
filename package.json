@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
+    "multiArray": "nodemon ./js/multiArray.js",
+    "destructuring": "nodemon ./js/destructuring.js",
     "pc-storage": "nodemon ./js/pc-storage.js",
     "numCount": "nodemon ./js/numCount.js",
     "family": "nodemon ./js/family.js",
