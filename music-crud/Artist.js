@@ -29,12 +29,18 @@ class Artist {
     }
 
     playlist() {
-        console.log(`${this.name}'s playlist:\r\n====================`);
-        let number = 0;
-        for (const i of this.list) {
-            console.log(`${++number}. ${i.name} (${i.playCount})`);
-        
-        }       
+        const firstLine = `${this.name}'s playlist:`;
+        let maxLength = firstLine.length;
+        let list1 = [];
+        for (let i = 0; i < this.list.length; i++) {
+            const { name, playCount } = this.list[i];
+            list1.push(`${i + 1}. ${name} (${playCount})`);
+            if (list1[i].length > maxLength) {
+                maxLength = list1[i].length;
+            }
+        }
+    
+        return `${firstLine}\r\n${'='.repeat(maxLength)}\r\n${list1.join('\r\n')}`;           
     }
 
     playSong(is) {
