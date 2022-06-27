@@ -727,3 +727,165 @@ console.log(noBoringZeros(n2));
 
 console.log('--------------------');
 
+const classPoints = [100, 40, 34, 57, 29, 72, 57, 88];
+const yourPoints = 75;
+function betterThanAverage(classPoints, yourPoints) {
+  const yours = [yourPoints];
+  const allPoints = [...classPoints, ...yours];
+  const sortedList = allPoints.sort((a, b) => a - b);
+  const size = allPoints.length;
+    let med2 = sortedList[Math.floor(size / 2)];
+    return yourPoints > med2;
+}
+console.log(betterThanAverage(classPoints, yourPoints));
+
+console.log('--------------------');
+
+const x2 = [9, 3, '7', '3'];
+function sumMix(x2){
+  let x3 = x2.map(i => +i);
+  let sum = 0;
+  for (let i = 0; i < x3.length; i++) {
+    sum += x3[i]; 
+  }
+  return sum;
+}
+console.log(sumMix(x2));
+
+console.log('--------------------');
+
+const n5 = 5;
+const reverseSeq = n5 => {
+  let n6 = [];
+  for (let i = n5; i > 0; i--) {
+    n6.push(i);
+  }
+  return n6;
+}
+console.log(reverseSeq(n5));
+
+console.log('--------------------');
+
+const a3 = 2;
+const b3 = 8;
+function between(a3, b3) {
+  let c3 = [];
+  for (let i = a3; i <= b3; i++) {
+    c3.push(i);
+  }
+  return c3;
+}
+console.log(between(a3, b3));
+
+console.log('--------------------');
+
+const amount = 26.95;
+const rating = 'GOOd';
+function calculateTip(amount, rating) {
+  const rating1 = rating.toLowerCase();
+  if (rating1 === 'terrible') {
+    return 0;
+  } else if (rating1 === 'poor') {
+    return Math.ceil(amount * (5 / 100));
+  } else if (rating1 === 'good') {
+    return Math.ceil(amount * (10 / 100));
+  } else if (rating1 === 'great') {
+    return Math.ceil(amount * (15 / 100));
+  } else if (rating1 === 'excellent') {
+    return Math.ceil(amount * (20 / 100));
+  } else {
+    return 'Rating not recognised';
+  }
+}
+console.log(calculateTip(amount, rating));
+
+console.log('--------------------');
+
+const exam = 100;
+const projects = 12;
+function finalGrade (exam, projects) {
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  } else {
+    return 0;
+  }
+}
+console.log(finalGrade (exam, projects));
+
+console.log('--------------------');
+
+const arr1 = ['Hello', 'Goodbye', 'Hello Again'];
+function removeEveryOther(arr1){
+  let arr2 = [];
+  for (let i = 0; i < arr1.length; i+=2) {
+    arr2.push(arr1[i]);
+  }
+  return arr2;
+}
+console.log(removeEveryOther(arr1));
+
+console.log('--------------------');
+
+const n7 = 9;
+function monkeyCount(n7) {
+  let count = [];
+  for (let i = 1; i <= n7; i++) {
+    count.push(i); 
+  }
+  return count;
+}
+console.log(monkeyCount(n7));
+
+console.log('--------------------');
+
+const nbPetals = 7;
+function howMuchILoveYou(nbPetals) {
+  const ptArr = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all'];
+  for (let i = 0; i <= nbPetals-1; i++) {
+    if (i === nbPetals - 1) {
+      return ptArr[i % 6];
+    } 
+  }
+}
+console.log(howMuchILoveYou(nbPetals));
+
+console.log('--------------------');
+
+const s2 = 'Your girlscout cookies are ready to ship. Your total comes to tree fiddy';
+function isLockNessMonster(s2) {
+  return /tree fiddy|3.50|three fifty/.test(s2); 
+}
+console.log(isLockNessMonster(s2));
+
+console.log('--------------------');
+
+const arr3 = ['tail', 'body', 'head'];
+function fixTheMeerkat(arr3) {
+  let end = arr3.shift();  //istrina pirma elementa
+  let begin = arr3.pop();  //istrina paskutini elementa
+  arr3.push(end);          //ideda elementa gale
+  arr3.unshift(begin);     //ideda nauja elementa pradzioje
+  return arr3;
+}
+console.log(fixTheMeerkat(arr3));
+
+console.log('--------------------');
+
+const a4 = 123;
+const a5 = a4.toString();
+console.log(a5);
+
+console.log('--------------------');
+
+const str7 = 'hello world!';
+function reverseWords(str7){
+  return str7.split(' ').reverse().join(' ');
+}
+console.log(reverseWords(str7));
+
+console.log('--------------------');
+
