@@ -889,3 +889,58 @@ console.log(reverseWords(str7));
 
 console.log('--------------------');
 
+const text = 'abracadabra';
+const orderedCount = function (text) {
+  const splitText = text.split('');
+  const text1 = [...new Set(splitText)];
+  let result = [];
+  for (let i = 0; i <= text1.length - 1; i++) {
+    result.push([text1[i], splitText.filter((t) => t === text1[i]).length]);
+  }
+  return result;
+}
+console.log(orderedCount(text));
+
+console.log('--------------------');
+
+const s3 = 'supercalifragilisticexpialidocious';
+const partLength = 3;
+var splitInParts = function(s3, partLength){
+  let parts = [];
+  for (let i = 0; i < s3.length; i += partLength) {
+    parts.push(s3.slice(i, i + partLength)); 
+  }
+  return parts.join(' ');
+}
+console.log(splitInParts(s3, partLength));
+
+console.log('--------------------');
+
+const n8 = 5;
+const m8 = 5;
+function paperwork(n8, m8) {
+  if (n8 < 0 || m8 < 0) {
+    return 0;
+  } else {
+    return n8 * m8;
+  }
+}
+console.log(paperwork(n8, m8));
+
+console.log('--------------------');
+
+const flower1 = 2;
+const flower2 = 7;
+function lovefunc(flower1, flower2){
+  if (flower1 % 2 === 0 && flower2 % 2 !== 0) {
+    return true;
+  } else if (flower2 % 2 === 0 && flower1 % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(lovefunc(flower1, flower2));
+
+console.log('--------------------');
+
