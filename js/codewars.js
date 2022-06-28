@@ -944,3 +944,89 @@ console.log(lovefunc(flower1, flower2));
 
 console.log('--------------------');
 
+const name2 = 'Tomas';
+function greet(name2){
+  if (name2 === "Johnny") {
+    return "Hello, my love!";
+  } else {
+  return "Hello, " + name2 + "!";
+  }
+}
+console.log(greet(name2));
+
+console.log('--------------------');
+
+const weight = 80;
+const height = 1.80;
+function bmi(weight, height) {
+  const total = weight / (height * height);
+  if (total <= 18.5) {
+    return 'Underweight';
+  } else if (total <= 25.0) {
+    return 'Normal';
+  } else if (total <= 30.0) {
+    return 'Overweight';
+  } else if (total > 30) {
+    return 'Obese';
+  } 
+}
+console.log(bmi(weight, height));
+
+console.log('--------------------');
+
+const marks = [1,2,3,4,5,];
+function getAverage(marks){
+  let total = 0;
+  for (let i = 0; i < marks.length; i++) {
+    total += marks[i];    
+  }
+  let aver = total / marks.length;
+  return Math.floor(aver);
+}
+console.log(getAverage(marks));
+
+console.log('--------------------');
+
+const name4 = 'Paul';
+function areYouPlayingBanjo(name4) {
+  if (name4.charAt(0) === 'R' || name4.charAt(0) === 'r') {
+    return name4 + ' plays banjo';
+  } else {
+    return name4 + ' does not play banjo';
+  }
+}
+console.log(areYouPlayingBanjo(name4));
+
+console.log('--------------------');
+
+const x6 = [4, 1, 1, 1, 4];
+function grow(x6){
+  let count = 1;
+  for (let i = 0; i < x6.length; i++) {
+    count *= x6[i]; 
+  }
+  return count;
+}
+console.log(grow(x6));
+
+console.log('--------------------');
+
+const str8 = 'hello';
+function makeUpperCase(str8) {
+  return str8.toUpperCase();
+}
+console.log(makeUpperCase(str8));
+
+console.log('--------------------');
+
+const number3 = 5;
+function simpleMultiplication(number3) {
+  if (number3 % 2 === 0) {
+    return number3 * 8;
+  } else {
+    return number3 * 9;
+  }
+}
+console.log(simpleMultiplication(number3));
+
+console.log('--------------------');
