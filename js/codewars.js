@@ -1030,3 +1030,26 @@ function simpleMultiplication(number3) {
 console.log(simpleMultiplication(number3));
 
 console.log('--------------------');
+
+const arr4 = [1, 2, 3];
+const arr5 = [4, 5, 6];
+function arrayPlusArray(arr4, arr5) {
+  const arr6 = [...arr4, ...arr5];
+  let total = 0;
+  for (let i = 0; i < arr6.length; i++) {
+    total += arr6[i];
+  }
+  return total;
+}
+console.log(arrayPlusArray(arr4, arr5));
+
+console.log('--------------------');
+
+const dna = 'GCAT';
+function DNAtoRNA(dna) {
+  return dna.split('').map(letter => letter === 'T' ? 'U' : letter).join('');
+}
+console.log(DNAtoRNA(dna));
+
+console.log('--------------------');
+
