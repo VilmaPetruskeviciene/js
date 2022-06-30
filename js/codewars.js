@@ -1053,3 +1053,59 @@ console.log(DNAtoRNA(dna));
 
 console.log('--------------------');
 
+const numbers1 = [1, 5.2, 4, 0, -1];
+function sum(numbers1) {
+  let total = 0;
+  for (let i = 0; i < numbers1.length; i++) {
+    total += numbers1[i]; 
+  }
+  return total;
+}
+console.log(sum(numbers1));
+
+console.log('--------------------');
+
+const list = [4,6,2,1,9,63,-134,566];
+const min = function(list){
+  return Math.min(...list);
+}
+console.log(min(list));
+
+const max = function(list){
+  return Math.max(...list);
+}
+console.log(max(list));
+
+console.log('--------------------');
+
+const array2 = [6, 2, 1, 8, 10];
+function sumArray(array2) {
+  if (array2 == null) {
+    return 0;
+  } else if (array2 < 2) {
+    return 0;
+  } else {
+    const minMaxList = [...array2].sort((a, b) => a - b);
+    let total = 0;
+    for (let i = 1; i < minMaxList.length - 1; i++) {
+      total += minMaxList[i]; 
+    }
+    return total;
+  }
+}
+console.log(sumArray(array2));
+
+console.log('--------------------');
+
+const num2 = 3;
+const countSheep = function (num2){
+  let number = '';
+  for (let i = 1; i <= num2; i++) {
+    number += i + ' sheep...'; 
+  }
+  return number;
+}
+console.log(countSheep(num2));
+
+console.log('--------------------');
+
