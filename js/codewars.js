@@ -1109,3 +1109,120 @@ console.log(countSheep(num2));
 
 console.log('--------------------');
 
+const games = ['1:0','2:0','3:0','4:0','2:1','3:1','4:1','3:2','4:2','4:3'];
+function points(games) {
+  let total = 0;
+  for (let i = 0; i < games.length; i++) {
+    if (games[i][0] > games[i][2]) {
+      total += 3;
+    }
+    if (games[i][0] == games[i][2]) {
+      total += 1;
+    } 
+  }
+  return total; 
+}
+console.log(points(games));
+
+console.log('--------------------');
+
+const salary = 10000;
+const bonus = true;
+function bonusTime(salary, bonus) {
+  if (bonus === true) {
+    return '\u00A3' + salary * 10;
+  } else {
+    return '\u00A3' + salary;
+  }
+}
+console.log(bonusTime(salary, bonus));
+
+console.log('--------------------');
+
+const words = ['hello', 'world', 'this', 'is', 'great'];
+function smash(words) {
+  let x = '';
+  for (let i = 0; i < words.length; i++) {
+    x += words[i] + ' '; 
+  }
+  let x1 = x.slice(0, x.length - 1);
+  return x1;
+}
+console.log(smash(words));
+
+console.log('--------------------');
+
+const string1 = 'Robin Singh';
+function stringToArray(string1){
+let x = string1.split(' ');
+return x;
+}
+console.log(stringToArray(string1));
+
+console.log('--------------------');
+
+const p1 = 'scissors';
+const p2 = 'paper';
+const rps = (p1, p2) => {
+  if (p1 === p2) {
+    return 'Draw!';
+  }
+  if (p1 === 'rock' && p2 === 'scissors') {
+    return 'Player 1 won!';
+  }
+  if (p1 === 'scissors' && p2 === 'paper') {
+    return 'Player 1 won!';
+  }
+  if (p1 === 'paper' && p2 === 'rock') {
+    return 'Player 1 won!';
+  }
+  if (p2 === 'rock' && p1 === 'scissors') {
+    return 'Player 2 won!';
+  }
+  if (p2 === 'scissors' && p1 === 'paper') {
+    return 'Player 2 won!';
+  }
+  if (p2 === 'paper' && p1 === 'rock') {
+    return 'Player 2 won!';
+  }
+}
+console.log(rps(p1, p2));
+
+console.log('--------------------');
+
+const num4 = 6;
+const num5 = 0;
+const operation1 = '/';
+function calculate(num4, operation1, num5) {
+  if (operation1 === '+') {
+    return num4 + num5;
+  } else if (operation1 === '-') {
+    return num4 - num5;
+  } else if (operation1 === '*') {
+    return num4 * num5;
+  } else if (operation1 === '/' && num5 !== 0) {
+    return num4 / num5;
+  } else {
+    return null;
+  }
+}
+console.log(calculate(num4, operation1, num5));
+
+console.log('--------------------');
+
+const arr7 = ['bsde', 'asdf', 14, '13'];
+function sortMe(arr7){
+    let arr8 = [...arr7].sort((a,b) => {
+      const [x,y] = [a.toString().slice(-1), b.toString().slice(-1)];
+      if (x !== y) return x.localeCompare(y);
+      else {
+        return arr.indexOf(a) - arr.indexOf(b);
+      }
+    })
+  return arr8;
+}
+console.log(sortMe(arr7));
+
+console.log('--------------------');
+
+console.log('--------------------');
