@@ -1216,7 +1216,7 @@ function sortMe(arr7){
       const [x,y] = [a.toString().slice(-1), b.toString().slice(-1)];
       if (x !== y) return x.localeCompare(y);
       else {
-        return arr.indexOf(a) - arr.indexOf(b);
+        return arr7.indexOf(a) - arr7.indexOf(b);
       }
     })
   return arr8;
@@ -1224,5 +1224,46 @@ function sortMe(arr7){
 console.log(sortMe(arr7));
 
 console.log('--------------------');
+
+const x7 = 2;
+const n9 = 5;
+function countBy(x7, n9) {
+  let z = [];
+  for (let i = 1; i <= n9; i++) {
+    z.push(x7 * i);
+    
+  }
+  return z;
+}
+console.log(countBy(x7, n9));
+
+console.log('--------------------');
+
+const number4 = 12;
+const a2 = 2;
+const b4 = -6;
+function isDivideBy(number4, a2, b4) {
+  if (number4 % a2 === 0 && number4 % b4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isDivideBy(number4, a2, b4));
+
+console.log('--------------------');
+
+const digits = '3167176531330624919220632623957831801698480186947';
+function solution(digits){
+  let largest = 0;
+  for (let i = 0; i < digits.length; i++) {
+    let element = digits.substr(i, 5);
+    if (Number(element) > largest) {
+      largest = Number(element);
+    }
+  }
+  return largest;
+}
+console.log(solution(digits));
 
 console.log('--------------------');
