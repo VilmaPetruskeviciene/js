@@ -1267,3 +1267,213 @@ function solution(digits){
 console.log(solution(digits));
 
 console.log('--------------------');
+
+const name5 = 'Greg';
+const owner = 'Daniel';
+function greet (name5, owner) {
+  if (name5 === owner) {
+    return 'Hello boss';
+  } else {
+    return 'Hello guest';
+  }
+}
+console.log(greet (name5, owner));
+
+console.log('--------------------');
+
+const d = 7;
+function rentalCarCost(d) {
+  if (d >= 7) {
+    return d * 40 - 50;
+  } else if (d >= 3) {
+    return d * 40 - 20;
+  } else {
+    return d * 40;
+  }
+}
+console.log(rentalCarCost(d));
+
+console.log('--------------------');
+
+const results = {'Java': 10, 'Ruby': 80, 'Python': 65};
+function myLanguages(results) {
+  let language = [];
+  for (let x in results) {
+    if (results[x] >= 60) {
+      language.push(x);
+    }
+  }
+  return language.sort((a, b) => results[b] - results[a]);
+}
+console.log(myLanguages(results));
+
+console.log('--------------------');
+
+const arr9 = [1,2,3,4,6,7,8];
+function firstNonConsecutive (arr9) { 
+  let count = [];
+  for (let i = 0; i < arr9.length; i++){
+    if (arr9[i+1] - arr9[i] !== 1) {
+      count.push(arr9[i+1]);
+    }
+  } 
+  if (count[0] == undefined) {
+    return null;
+  } else {
+    return count[0];
+  }
+}
+console.log(firstNonConsecutive (arr9));
+
+console.log('--------------------');
+
+const str9 = 'abracadabra';
+function getCount(str9) {
+  let count =0;
+  for (let i = 0; i < str9.length; i++) {
+    if (str9.charAt(i) === 'a' || str9.charAt(i) === 'e' || str9.charAt(i) === 'i' || str9.charAt(i) === 'o' || str9.charAt(i) === 'u') {
+      count += 1;
+    }  
+  }
+  return count;
+}
+console.log(getCount(str9));
+
+console.log('--------------------');
+
+const array3 = [1,2,3,4];
+const multiplier = 1.5;
+function multiplyAndFilter(array3, multiplier){
+  let count = [];
+  for (let i = 0; i < array3.length; i++) {
+    if (typeof array3[i] === 'number') {
+      count.push(array3[i] * multiplier);
+    }
+  } 
+  return count;
+}
+console.log(multiplyAndFilter(array3, multiplier));
+
+console.log('--------------------');
+
+const s4 = 'FUFFDDFDUDFUFUF';
+function countingValleys(s4) {
+  let valleys = 0;
+  let level = 0;
+  for (let i = 0; i < s4.length; i++) {
+    if (level === -1 && s4[i] === 'U') {
+      valleys++;
+    } 
+    if (s4[i] === 'D') {
+      level -= 1;
+    }
+    if (s4[i] === 'U') {
+      level += 1;
+    }
+  }
+  return valleys;
+}
+console.log(countingValleys(s4));
+
+console.log('--------------------');
+
+const n10 = 25;
+function halvingSum(n10) {
+  let total = 0;
+  while (n10 >= 1) {
+    total += n10;
+    n10 = Math.floor(n10 * 1 / 2);
+  }
+  return total;
+}
+console.log(halvingSum(n10));
+
+console.log('--------------------');
+
+const s5 = 'Hello world!';
+function removeExclamationMarks(s5) {
+  let word = '';
+  for (let i = 0; i < s5.length; i++) {
+    if (s5[i] !== '!' && s5[i] !== '?' && s5[i] !== '.' && s5[i] !== ',' && s5[i] !== ';' && s5[i] !== ':') {
+      word += s5[i];
+    } 
+  }
+  return word;
+}
+console.log(removeExclamationMarks(s5));
+
+console.log('--------------------');
+
+const s6 = 70;
+const s7 = 70;
+const s8 = 70;
+function getGrade(s6, s7, s8) {
+  const score = Math.floor((s6 + s7 + s8) / 3);
+  if ( score >= 90 && score <= 100) {
+    return 'A';
+  }
+  if (score >= 80 && score < 90) {
+    return 'B';
+  }
+  if (score >= 70 && score < 80) {
+    return 'C';
+  }
+  if (score >= 60 && score < 70) {
+    return 'D';
+  }
+  if (score >= 0 && score < 60) {
+    return 'F';
+  }
+}
+console.log(getGrade(s6, s7, s8));
+
+console.log('--------------------');
+
+const employed = true;
+const vacation = true;
+function setAlarm(employed, vacation) {
+  if (employed === true && vacation === false) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(setAlarm(employed, vacation));
+
+console.log('--------------------');
+
+const beast = 'great blue heron';
+const dish = 'garlic naan';
+function feast(beast, dish) {
+  if (beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(feast(beast, dish));
+
+console.log('--------------------');
+
+const n11 = [1, 4, 64];
+function asteriscIt(n11) {
+  let n12 = ''
+  let str = '';
+  if (Array.isArray(n11)) {
+    n12 = n11.join('').split();
+  } else {
+    n12 = n11.toString();
+  }
+  for (let i = 0; i < n12.length; i++) {
+    if (n12[i] % 2 === 0 && n12[i + 1] % 2 === 0) {
+      str += n12[i] + '*';
+    } else {
+      str += n12[i];
+    } 
+  }
+  return str;
+}
+console.log(asteriscIt(n11));
+
+console.log('--------------------');
+
